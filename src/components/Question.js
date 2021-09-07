@@ -19,7 +19,7 @@ function Question({ question, onAnswered }) {
     return function cleanup() {
       clearTimeout(timerID)
     }
-  }, [timeRemaining])
+  }, [timeRemaining, onAnswered])
 
   function handleAnswer(isCorrect) {
     setTimeRemaining(10);
